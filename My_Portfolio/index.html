@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Header</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #222;
+      color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00adb5;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 30px;
+      background-color: #f8f9fa;
+    }
+
+    .hero-left {
+      max-width: 50%;
+    }
+
+    .hero-left h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .hero-left p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .hero-left button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #00adb5;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .hero-left button:hover {
+      background-color: #007b83;
+    }
+
+    .hero-right img {
+      width: 400px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Mohd Suhail</div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <h1>MERN Stack Developer</h1>
+    <p>I build full-stack web applications using MongoDB, Express, React, and Node.js.</p>
+    <button onclick="location.href='p1'">View My Projects</button>
+  </div>
+  <div class="hero-right">
+    <img src="abc.jpg" alt="Profile Image">
+  </div>
+</section>
+
+</body>
+</html>
