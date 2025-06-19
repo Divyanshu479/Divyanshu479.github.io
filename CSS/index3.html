@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex, Grid, Inline, Inline-Block</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 40px;
+    }
+
+  
+    .inline-box {
+      display: inline;
+      background-color: #ffcccc;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid red;
+    }
+
+ 
+    .inline-block-box {
+      display: inline-block;
+      background-color: #ccffcc;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid green;
+      width: 200px;
+    }
+
+    
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+      height: 200px;
+      background-color: yellow;
+      border: 2px dashed gray;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .flex-box {
+      background-color: #ccccff;
+      padding: 20px;
+      border: 1px solid blue;
+      width: 200px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      background-color: #e0f7fa;
+      padding: 20px;
+      margin-top: 30px;
+      border: 2px solid #ccc;
+      height: 250px;
+    }
+
+    .grid-item {
+      background-color: rgb(35, 215, 206);
+      border: 2px solid #123372;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Inline Elements</h2>
+  <span class="inline-box">Inline Box</span>
+  <span class="inline-box">Another Inline</span>
+
+  <h2>2. Inline-Block Elements</h2>
+  <span class="inline-block-box">Inline-Block Box</span>
+  <span class="inline-block-box">Another Inline-Block</span>
+
+  <h2>3. Flexbox Layout (Centered, Wrap)</h2>
+  <div class="flex-container">
+    <div class="flex-box">Flex Box 1</div>
+    <div class="flex-box">Flex Box 2</div>
+    <div class="flex-box">Flex Box 3</div>
+    <div class="flex-box">Flex Box 4</div>
+  </div>
+
+  <h2>4. Grid Layout</h2>
+  <div class="grid">
+    <div class="grid-item">Grid Item 1</div>
+    <div class="grid-item">Grid Item 2</div>
+    <div class="grid-item">Grid Item 3</div>
+    <div class="grid-item">Grid Item 4</div>
+    <div class="grid-item">Grid Item 5</div>
+  </div>
+
+</body>
+</html>
